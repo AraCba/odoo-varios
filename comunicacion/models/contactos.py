@@ -34,12 +34,12 @@ class Partner(models.Model):
     tipodni = fields.Selection(TIPODOC,'Tipo doc')
     dni = fields.Integer('N documento')
     sexo = fields.Selection(SEXO,'Sexo')
-    fecha_nacimiento = fields.Date('Fecha de nacimiento')
+    ano_nacimiento = fields.Integer('Año aproximado de nacimiento')
   
     observado = fields.Boolean('Observado?')
     observacion = fields.Char('Observación')
 
-    fuente = fields.Char('Fuente', readonly=True)
+    fuente = fields.Char('Fuente')
   
     
     facebook_url = fields.Char('Facebook')
