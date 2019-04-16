@@ -16,7 +16,7 @@
     'name': 'Comunicación',
     'version': '0.1',
     'category': 'Base',
-    'summary': """Comunicación con contactos""",
+    'summary': """Comunicación""",
 
     'description': """
 Este módulo permite organizar la comunicación con contactos
