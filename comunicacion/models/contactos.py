@@ -35,6 +35,8 @@ class Partner(models.Model):
     dni = fields.Integer('N documento')
     sexo = fields.Selection(SEXO,'Sexo')
     ano_nacimiento = fields.Integer('Año aproximado de nacimiento')
+    edad = fields.Integer('Año aproximado de nacimiento')
+    ocupacion = fields.Char('Ocupación/Profesión')
   
     observado = fields.Boolean('Observado?')
     observacion = fields.Char('Observación')
@@ -42,11 +44,10 @@ class Partner(models.Model):
     fuente = fields.Char('Fuente')
   
     
-    facebook_url = fields.Char('Facebook')
-    twitter_url = fields.Char('Twitter')
-    youtube_url = fields.Char('Youtube')
-    instagram_url = fields.Char('Instagram')
-    googleplus_url = fields.Char('Google+')
+    sn_facebook_url = fields.Char('Facebook')
+    sn_twitter_url = fields.Char('Twitter')
+    sn_youtube_url = fields.Char('Youtube')
+    sn_instagram_url = fields.Char('Instagram')
 
     _defaults = {
     }

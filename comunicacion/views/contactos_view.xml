@@ -76,16 +76,17 @@
                             <field name="dni"/>
                             <field name="sexo"/>
                             <field name="ano_nacimiento"/>
-                            <field name="fuente" attrs="{'readonly':1}"/>
+                            <field name="edad"/>
+                            <field name="ocupacion"/>
                         </group>
                         <group>
-                            <field name="facebook_url"/>
-                            <field name="twitter_url"/>
-                            <field name="youtube_url"/>
-                            <field name="instagram_url"/>
-                            <field name="googleplus_url"/>
+                            <field name="sn_facebook_url"/>
+                            <field name="sn_twitter_url"/>
+                            <field name="sn_youtube_url"/>
+                            <field name="sn_instagram_url"/>
                             <field name="observado"/>
                             <field name="observacion" attrs="{'invisible': [('observado','=', False)]}"/>
+                            <field name="fuente" attrs="{'readonly':1}"/>
                         </group>
                     </group>
                 </page>
@@ -93,6 +94,21 @@
             </notebook>
         </field>
     </record>
+
+
+
+
+
+
+    <template id="portal_detalles" name="Detalles" inherit_id="portal_my_details">
+        <div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-xl-6">
+                                <label class="col-form-label" for="name">Your Name</label>
+                                <input type="text" name="name" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="name or partner.name" />
+                            </div>
+
+
+
+
 
 
 </odoo>
