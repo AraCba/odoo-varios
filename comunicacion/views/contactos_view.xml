@@ -100,11 +100,11 @@
 
 
 
-    <template id="portal_detalles" name="Detalles" inherit_id="portal_my_details">
+    <!--template id="portal_detalles" name="Detalles" inherit_id="portal_my_details">
         <div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-xl-6">
                                 <label class="col-form-label" for="name">Your Name</label>
                                 <input type="text" name="name" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="name or partner.name" />
-                            </div>
+                            </div-->
 
 
 
