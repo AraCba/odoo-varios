@@ -77,16 +77,16 @@
                             <field name="sexo"/>
                             <field name="ano_nacimiento"/>
                             <field name="edad"/>
-                            <field name="ocupacion"/>
                         </group>
                         <group>
                             <field name="sn_facebook_url"/>
                             <field name="sn_twitter_url"/>
                             <field name="sn_youtube_url"/>
                             <field name="sn_instagram_url"/>
+                            <field name="ocupacion"/>
+                            <field name="fuente" attrs="{'readonly':1}"/>
                             <field name="observado"/>
                             <field name="observacion" attrs="{'invisible': [('observado','=', False)]}"/>
-                            <field name="fuente" attrs="{'readonly':1}"/>
                         </group>
                     </group>
                 </page>
