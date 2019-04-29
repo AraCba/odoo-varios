@@ -35,7 +35,7 @@ class Partner(models.Model):
     dni = fields.Integer('N documento')
     sexo = fields.Selection(SEXO,'Sexo')
     ano_nacimiento = fields.Integer('Año aproximado de nacimiento')
-    edad = fields.Integer('Año aproximado de nacimiento')
+    edad = fields.Integer('Edad')
     ocupacion = fields.Char('Ocupación/Profesión')
   
     observado = fields.Boolean('Observado?')
